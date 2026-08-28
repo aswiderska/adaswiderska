@@ -1,289 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ada Świderska | Actress</title>
-
-<style>
-*{
-    margin:0;
-    padding:0;
-   *box-sizing:border-box;
-}
-
-html{
-  * scroll-behavior:smooth;
-}
-
-body{
-*   font-family: Arial, sans-serif;*    background:#0d0d0d;
-    color:*hite;
-}
-
-nav{
-    position:fixed;
-*   top:0;
-    width:100%;
-    padd*ng:25px 40px;
-    background:rgba(*,0,0,0.6);
-    backdrop-filter:blu*(10px);
-    z-index:100;
-    displ*y:flex;
-    justify-content:space-*etween;
-}
-
-nav a{
-    color:white;*    text-decoration:none;
-    marg*n-left:20px;
-}
-
-.hero{
-    height:*00vh;
-    background:
-    linear-g*adient(rgba(0,0,0,.45),rgba(0,0,0,*55)),
-    url("hero.jpeg");
-    ba*kground-size:cover;
-    background*position:center top;
-    display:f*ex;
-    align-items:center;
-}
-
-.he*o-content{
-    padding-left:8%;
-  * max-width:700px;
-}
-
-.hero h1{
-   *font-size:5rem;
-    font-family:Ge*rgia, serif;
-}
-
-.hero p{
-    margi*-top:20px;
-    font-size:1.1rem;
- *  letter-spacing:2px;
-    text-tra*sform:uppercase;
-}
-
-section{
-    p*dding:100px 8%;
-}
-
-h2{
-    font-si*e:3rem;
-    margin-bottom:40px;
-  * font-family:Georgia, serif;
-}
-
-.a*out{
-    background:#151515;
-}
-
-.a*out p{
-    max-width:800px;
-    co*or:#d0d0d0;
-    line-height:1.8;
- *  font-size:1.1rem;
-}
-
-.details{
- *  margin-top:40px;
-    display:gri*;
-    grid-template-columns:repeat*auto-fit,minmax(200px,1fr));
-    g*p:25px;
-}
-
-.card{
-    border:1px s*lid rgba(255,255,255,.15);
-    pad*ing:20px;
-}
-
-.card span{
-    color*#999;
-    font-size:.8rem;
-    dis*lay:block;
-    margin-bottom:8px;
-*
-
-.gallery{
-    display:grid;
-    *rid-template-columns:repeat(auto-f*t,minmax(320px,1fr));
-    gap:20px*
-}
-
-.gallery img{
-    width:100%;
-*   height:700px;
-    object-fit:co*er;
-    transition:.4s;
-}
-
-.galler* img:hover{
-    transform:scale(1.*2);
-}
-
-.showreel{
-    background:#*51515;
-}
-
-.showreel-box{
-    heigh*:400px;
-    background:url("portra*t-2.jpeg");
-    background-size:co*er;
-    background-position:center*
-    display:flex;
-    justify-con*ent:center;
-    align-items:center*
-    border:1px solid rgba(255,255*255,.15);
-}
-
-.showreel-box span{
- *  font-size:4rem;
-}
-
-.contact{
-   *text-align:center;
-}
-
-.contact a{
-*   color:white;
-    font-size:1.4rem;
-    text-decoration:none;
-}
-
-footer{
-    padding:30px;
-    text-align:center;
-    border-top:1px solid rgba(255,255,255,.1);
-    color:#888;
-}
-
-@media(max-width:768px){
-
-.hero h1{
-    font-size:3rem;
-}
-
-h2{
-    font-size:2rem;
-}
-
-.gallery img{
-    height:auto;
-}
-
-}
-</style>
-</head>
-
-<body>
-
-<nav>
-    <div>Ada Świderska</div>
-
-    <div>
-        #aboutAbout</a>
-        #portfolioPortfolio</a>
-        #showreelShowreel</a>
-        #contactContact</a>
-    </div>
-</nav>
-
-<section class="hero">
-
-    <div class="hero-content">
-        <h1>Ada Świderska</h1>
-
-        <p>
-            Actress • 29 Years Old • Warsaw, Poland
-        </p>
-    </div>
-
-</section>
-
-<section class="about" id="about">
-
-    <h2>About</h2>
-
-    <p>
-        Ada Świderska is an actress based in Warsaw, Poland.
-        Available for film, television, commercial and creative productions.
-    </p>
-
-    <div class="details">
-
-        <div class="card">
-            <span>Location</span>
-            Warsaw, Poland
-        </div>
-
-        <div class="card">
-            <span>Age</span>
-            29
-        </div>
-
-        <div class="card">
-            <span>Languages</span>
-            Polish, English
-        </div>
-
-        <div class="card">
-            <span>Availability</span>
-            Poland & International
-        </div>
-
-    </div>
-
-</section>
-
-<section id="portfolio">
-
-    <h2>Portfolio</h2>
-
-    <div class="gallery">
-
-        portrait-1.jpeg
-
-        hero.jpeg
-
-        portrait-2.jpeg
-
-    </div>
-
-</section>
-
-<section class="showreel" id="showreel">
-
-    <h2>Showreel</h2>
-
-    <div class="showreel-box">
-        <span>▶</span>
-    </div>
-
-    <p style="margin-top:20px;color:#aaa;">
-        Showreel coming soon.
-    </p>
-
-</section>
-
-<section class="contact" id="contact">
-
-    <h2>Contact</h2>
-
-    <p style="margin-bottom:20px;">
-        Available for casting and professional opportunities.
-    </p>
-
-    twojemail@example.com
-        twojemail@example.com
-    </a>
-
-</section>
-
-<footer>
-    © 2026 Ada Świderska
-</footer>
-
-</body>
-</html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Ada Świderska, aktorka z Warszawy. Portfolio aktorskie, zdjęcia i kontakt."
+    >
+
+    <title>Ada Świderska | Aktorka</title>
+
+    <style>
+        :root {
+            --background: #0d0c0e;
+            --background-secondary: #171419;
+            --text: #f4f0ec;
+            --text-muted: #b8afb4;
+            --accent: #7b2948;
+            --border: rgba(255, 255, 255, 0.14);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: var(--background);
+            color: var(--text);
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+        }
+
+        body.modal-open {
+            overflow: hidden;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+        }
+
+        /* NAWIGACJA */
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            padding: 22px 6%;
+            transition: background 0.3s ease;
+        }
+
+        .navbar.scrolled {
+            background: rgba(13, 12, 14, 0.94);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .logo {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 22px;
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: opacity 0.2s ease;
+        }
+
+        .nav-links a:hover {
+            opacity: 0.65;
+        }
+
+        .menu-button {
+            display: none;
+            color: white;
+            background: transparent;
+            border: 0;
+            font-size: 26px;
+            cursor: pointer;
+        }
+
+        /* STRONA GŁÓWNA */
+
+        .hero {
+            position: relative;
+            display: flex;
+            min-height: 100vh;
+            align-items: flex-end;
+            padding
