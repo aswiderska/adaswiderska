@@ -1,116 +1,50 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta
-        name="description"
-        content="Ada Świderska, aktorka z Warszawy. Portfolio aktorskie, zdjęcia i kontakt."
-    >
-
-    <title>Ada Świderska | Aktorka</title>
-
-    <style>
-        :root {
-            --background: #0d0c0e;
-            --background-secondary: #171419;
-            --text: #f4f0ec;
-            --text-muted: #b8afb4;
-            --accent: #7b2948;
-            --border: rgba(255, 255, 255, 0.14);
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            background: var(--background);
-            color: var(--text);
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.6;
-        }
-
-        body.modal-open {
-            overflow: hidden;
-        }
-
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        img {
-            display: block;
-            width: 100%;
-        }
-
-        /* NAWIGACJA */
-
-        .navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-            display: flex;
-            width: 100%;
-            align-items: center;
-            justify-content: space-between;
-            padding: 22px 6%;
-            transition: background 0.3s ease;
-        }
-
-        .navbar.scrolled {
-            background: rgba(13, 12, 14, 0.94);
-            backdrop-filter: blur(12px);
-            border-bottom: 1px solid var(--border);
-        }
-
-        .logo {
-            font-family: Georgia, "Times New Roman", serif;
-            font-size: 22px;
-            letter-spacing: 1px;
-        }
-
-        .nav-links {
-            display: flex;
-            align-items: center;
-            gap: 30px;
-            list-style: none;
-        }
-
-        .nav-links a {
-            font-size: 12px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            transition: opacity 0.2s ease;
-        }
-
-        .nav-links a:hover {
-            opacity: 0.65;
-        }
-
-        .menu-button {
-            display: none;
-            color: white;
-            background: transparent;
-            border: 0;
-            font-size: 26px;
-            cursor: pointer;
-        }
-
-        /* STRONA GŁÓWNA */
-
-        .hero {
-            position: relative;
-            display: flex;
-            min-height: 100vh;
-            align-items: flex-end;
-            padding
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ada Świderska, portfolio aktorskie, Warszawa.">
+  <title>Ada Świderska | Portfolio aktorskie</title>
+  <style>
+    :root{--bg:#0d0c0e;--panel:#171419;--text:#f4f0ec;--muted:#b8afb4;--accent:#bd718c;--border:rgba(255,255,255,.14)}
+    *{margin:0;padding:0;box-sizing:border-box} html{scroll-behavior:smooth}
+    body{background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none} img{display:block;width:100%}
+    nav{position:fixed;top:0;left:0;z-index:1000;display:flex;width:100%;align-items:center;justify-content:space-between;padding:22px 6%;background:linear-gradient(to bottom,rgba(0,0,0,.8),transparent)}
+    .logo{font:22px Georgia,serif}.links{display:flex;gap:28px;list-style:none}.links a{font-size:12px;text-transform:uppercase;letter-spacing:2px}
+    .hero{display:flex;min-height:100vh;align-items:flex-end;padding:0 7% 10vh;background:linear-gradient(90deg,rgba(0,0,0,.6),rgba(0,0,0,.04)),linear-gradient(to top,rgba(0,0,0,.82),transparent 52%),url("hero.jpeg") center 20%/cover no-repeat}
+    .eyebrow{margin-bottom:14px;font-size:12px;text-transform:uppercase;letter-spacing:5px}.hero h1{font:400 clamp(58px,9vw,130px)/.92 Georgia,serif;letter-spacing:-4px}
+    .hero-details{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:28px;font-size:13px;text-transform:uppercase;letter-spacing:2px}
+    .button{display:inline-block;margin-top:34px;padding:15px 25px;background:#fff;color:#111;border:1px solid #fff;font-size:11px;text-transform:uppercase;letter-spacing:2px}.button:hover{background:transparent;color:#fff}
+    section:not(.hero){padding:110px 7%}.section-head{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:50px;padding-bottom:20px;border-bottom:1px solid var(--border)}
+    .section-head h2{font:400 clamp(42px,6vw,72px)/1 Georgia,serif}.number{color:var(--accent);font-size:12px;letter-spacing:2px}
+    .about,.showreel{background:var(--panel)}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:8vw}.lead{font:clamp(27px,3.2vw,44px)/1.3 Georgia,serif}.copy{color:var(--muted);font-size:17px}.copy p{margin-bottom:22px}
+    .details{display:grid;grid-template-columns:1fr 1fr;gap:25px;margin-top:40px}.detail{padding-top:15px;border-top:1px solid var(--border)}.label{display:block;margin-bottom:5px;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:2px}.value{color:var(--text);font:20px Georgia,serif}
+    .gallery{display:grid;grid-template-columns:1.05fr .95fr;grid-template-rows:repeat(2,430px);gap:22px}.gallery figure{overflow:hidden;cursor:pointer;background:#1d1a1e}.gallery figure:first-child{grid-row:1/3}.gallery img{height:100%;object-fit:cover;transition:transform .5s}.gallery figure:first-child img{object-position:center top}.gallery img:hover{transform:scale(1.025)}
+    .showreel-image{display:flex;min-height:520px;align-items:center;justify-content:center;background:linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.65)),url("portrait-2.jpeg") center 25%/cover no-repeat}.play{display:flex;width:88px;height:88px;align-items:center;justify-content:center;padding-left:5px;border:1px solid #fff;border-radius:50%;font-size:26px}.showreel p{margin-top:18px;color:var(--muted);text-align:center}
+    .contact{text-align:center}.contact small{display:block;margin-bottom:20px;color:var(--accent);text-transform:uppercase;letter-spacing:3px}.contact h2{max-width:850px;margin:0 auto 25px;font:400 clamp(43px,7vw,88px)/1.05 Georgia,serif}.contact p{max-width:600px;margin:0 auto 38px;color:var(--muted);font-size:17px}.email{display:inline-block;padding-bottom:6px;border-bottom:1px solid #fff;font:clamp(19px,3vw,30px) Georgia,serif}
+    footer{display:flex;justify-content:space-between;gap:20px;padding:32px 7%;color:var(--muted);border-top:1px solid var(--border);font-size:11px;text-transform:uppercase;letter-spacing:1px}
+    .modal{position:fixed;inset:0;z-index:2000;display:none;align-items:center;justify-content:center;padding:25px;background:rgba(0,0,0,.95)}.modal.open{display:flex}.modal img{width:auto;max-width:95vw;max-height:92vh;object-fit:contain}.close{position:fixed;top:20px;right:25px;width:46px;height:46px;color:#fff;background:#0008;border:1px solid #fff;border-radius:50%;font-size:27px;cursor:pointer}
+    @media(max-width:800px){nav{padding:18px 5%}.links{gap:10px}.links a{font-size:9px;letter-spacing:1px}.hero{padding:0 6% 9vh;background-position:58% top}.hero h1{font-size:clamp(55px,17vw,85px);letter-spacing:-2px}section:not(.hero){padding:80px 6%}.about-grid{grid-template-columns:1fr;gap:45px}.gallery{grid-template-columns:1fr;grid-template-rows:auto}.gallery figure,.gallery figure:first-child{grid-row:auto;aspect-ratio:2/3}.showreel-image{min-height:430px}footer{flex-direction:column;align-items:center;text-align:center}}
+    @media(max-width:520px){.logo{font-size:17px}.links{display:none}.hero-details{flex-direction:column;gap:7px}.details{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <nav><a class="logo" href="#home">Ada Świderska</a><ul class="links"><li><a href="#about">O mnie</a></li><li><a href="#portfolio">Portfolio</a></li><li><a href="#showreel">Showreel</a></li><li><a href="#contact">Kontakt</a></li></ul></nav>
+  <main>
+    <section class="hero" id="home"><div><div class="eyebrow">Portfolio aktorskie</div><h1>Ada<br>Świderska</h1><div class="hero-details"><span>Aktorka</span><span>29 lat</span><span>Warszawa</span></div><a class="button" href="#portfolio">Zobacz portfolio</a></div></section>
+    <section class="about" id="about"><div class="section-head"><h2>O mnie</h2><span class="number">01</span></div><div class="about-grid"><div class="lead">Aktorka mieszkająca w Warszawie, otwarta na projekty filmowe, telewizyjne, reklamowe i artystyczne.</div><div class="copy"><p>Nazywam się Ada Świderska. Mam 29 lat i mieszkam w Warszawie. Jestem zainteresowana udziałem w produkcjach filmowych, telewizyjnych, reklamowych oraz innych projektach kreatywnych.</p><p>Na stronie znajdują się moje aktualne zdjęcia, materiały aktorskie oraz dane kontaktowe.</p><div class="details"><div class="detail"><span class="label">Lokalizacja</span><span class="value">Warszawa</span></div><div class="detail"><span class="label">Wiek</span><span class="value">29 lat</span></div><div class="detail"><span class="label">Języki</span><span class="value">Polski, angielski</span></div><div class="detail"><span class="label">Dostępność</span><span class="value">Polska i zagranica</span></div></div></div></div></section>
+    <section id="portfolio"><div class="section-head"><h2>Portfolio</h2><span class="number">02</span></div><div class="gallery"><figure><img src="portrait-1.jpeg" alt="Portret aktorski 1"></figure><figure><img src="hero.jpeg" alt="Portret aktorski 2"></figure><figure><img src="portrait-2.jpeg" alt="Portret aktorski 3"></figure></div></section>
+    <section class="showreel" id="showreel"><div class="section-head"><h2>Showreel</h2><span class="number">03</span></div><div class="showreel-image"><div class="play">▶</div></div><p>Showreel będzie dostępny wkrótce.</p></section>
+    <section class="contact" id="contact"><small>Kontakt</small><h2>Porozmawiajmy o współpracy</h2><p>Zapraszam do kontaktu w sprawie castingów, produkcji filmowych, reklamowych i projektów artystycznych.</p><a class="email" href="mailto:twojemail@example.com">twojemail@example.com</a></section>
+  </main>
+  <footer><span>© 2026 Ada Świderska</span><span>Portfolio aktorskie</span><a href="#home">Powrót na górę ↑</a></footer>
+  <div class="modal" id="modal"><button class="close" id="close" aria-label="Zamknij">×</button><img id="modalImage" alt="Powiększone zdjęcie"></div>
+  <script>
+    const modal=document.getElementById('modal'), modalImage=document.getElementById('modalImage');
+    document.querySelectorAll('.gallery img').forEach(img=>img.addEventListener('click',()=>{modalImage.src=img.src;modal.classList.add('open');document.body.style.overflow='hidden'}));
+    function closeModal(){modal.classList.remove('open');modalImage.src='';document.body.style.overflow=''}
+    document.getElementById('close').addEventListener('click',closeModal);modal.addEventListener('click',e=>{if(e.target===modal)closeModal()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+  </script>
+</body>
+</html>
