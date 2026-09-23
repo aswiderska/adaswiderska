@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ada Świderska, actress based in Warsaw. Acting portfolio, photographs, video introduction and contact.">
+  <title>Ada Świderska | Acting Portfolio</title>
+  <style>
+:root{--bg:#0d0c0e;--panel:#171419;--text:#f4f0ec;--muted:#b8afb4;--accent:#bd718c;--border:rgba(255,255,255,.14)}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.6}body.modal-open{overflow:hidden}a{color:inherit;text-decoration:none}img{display:block;width:100%}
+nav{position:fixed;top:0;left:0;z-index:1000;display:flex;width:100%;align-items:center;justify-content:space-between;padding:22px 6%;background:linear-gradient(to bottom,rgba(0,0,0,.85),transparent)}.logo{font:22px Georgia,serif}.nav-right{display:flex;align-items:center;gap:28px}.links{display:flex;gap:28px;list-style:none}.links a,.language-switch a{font-size:12px;text-transform:uppercase;letter-spacing:2px}.language-switch{display:flex;gap:8px;align-items:center;color:var(--muted)}.language-switch a.active{color:var(--text);border-bottom:1px solid var(--text)}
+.hero{display:flex;min-height:100vh;align-items:flex-end;padding:0 7% 10vh;background:linear-gradient(90deg,rgba(0,0,0,.6),rgba(0,0,0,.04)),linear-gradient(to top,rgba(0,0,0,.82),transparent 52%),url("hero1.png") center 20%/cover no-repeat}.eyebrow{margin-bottom:14px;font-size:12px;text-transform:uppercase;letter-spacing:5px}.hero h1{font:400 clamp(58px,9vw,130px)/.92 Georgia,serif;letter-spacing:-4px}.hero-details{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:28px;font-size:13px;text-transform:uppercase;letter-spacing:2px}.button{display:inline-block;margin-top:34px;padding:15px 25px;background:#fff;color:#111;border:1px solid #fff;font-size:11px;text-transform:uppercase;letter-spacing:2px}.button:hover{background:transparent;color:#fff}
+section:not(.hero){padding:110px 7%}.section-head{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:50px;padding-bottom:20px;border-bottom:1px solid var(--border)}.section-head h2{font:400 clamp(42px,6vw,72px)/1 Georgia,serif}.number{color:var(--accent);font-size:12px;letter-spacing:2px}.about,.reel{background:var(--panel)}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:8vw}.lead{font:clamp(27px,3.2vw,44px)/1.3 Georgia,serif}.copy{color:var(--muted);font-size:17px}.copy p{margin-bottom:22px}.details{display:grid;grid-template-columns:1fr 1fr;gap:25px;margin-top:40px}.detail{padding-top:15px;border-top:1px solid var(--border)}.label{display:block;margin-bottom:5px;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:2px}.value{color:var(--text);font:20px Georgia,serif}
+.gallery{display:grid;grid-template-columns:1.05fr .95fr;grid-template-rows:repeat(2,430px);gap:22px}.gallery figure{overflow:hidden;cursor:pointer;background:#1d1a1e}.gallery figure:first-child{grid-row:1/3}.gallery img{height:100%;object-fit:cover;transition:transform .5s}.gallery figure:first-child img{object-position:center top}.gallery img:hover{transform:scale(1.025)}
+.video-wrapper{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;border-radius:12px;background:#000;box-shadow:0 20px 60px rgba(0,0,0,.3)}.video-wrapper iframe{position:absolute;inset:0;width:100%;height:100%;border:0}.video-link{display:block;margin-top:18px;color:var(--muted);text-align:center;font-size:14px}.video-link:hover{color:var(--text)}
+.contact{text-align:center}.contact small{display:block;margin-bottom:20px;color:var(--accent);text-transform:uppercase;letter-spacing:3px}.contact h2{max-width:850px;margin:0 auto 25px;font:400 clamp(43px,7vw,88px)/1.05 Georgia,serif}.contact p{max-width:600px;margin:0 auto 38px;color:var(--muted);font-size:17px}.email{display:inline-block;padding-bottom:6px;border-bottom:1px solid #fff;font:clamp(19px,3vw,30px) Georgia,serif}footer{display:flex;justify-content:space-between;gap:20px;padding:32px 7%;color:var(--muted);border-top:1px solid var(--border);font-size:11px;text-transform:uppercase;letter-spacing:1px}
+.modal{position:fixed;inset:0;z-index:2000;display:none;align-items:center;justify-content:center;padding:25px;background:rgba(0,0,0,.95)}.modal.open{display:flex}.modal img{width:auto;max-width:95vw;max-height:92vh;object-fit:contain}.close{position:fixed;top:20px;right:25px;width:46px;height:46px;color:#fff;background:#0008;border:1px solid #fff;border-radius:50%;font-size:27px;cursor:pointer}
+@media(max-width:800px){nav{padding:18px 5%}.nav-right{gap:14px}.links{gap:10px}.links a,.language-switch a{font-size:9px;letter-spacing:1px}.hero{padding:0 6% 9vh;background-position:58% top}.hero h1{font-size:clamp(55px,17vw,85px);letter-spacing:-2px}section:not(.hero){padding:80px 6%}.about-grid{grid-template-columns:1fr;gap:45px}.gallery{grid-template-columns:1fr;grid-template-rows:auto}.gallery figure,.gallery figure:first-child{grid-row:auto;aspect-ratio:2/3}footer{flex-direction:column;align-items:center;text-align:center}}
+@media(max-width:600px){.links{display:none}.logo{font-size:18px}.hero-details{flex-direction:column;gap:7px}.details{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+  <nav>
+    <a class="logo" href="#home">Ada Świderska</a>
+    <div class="nav-right">
+      <ul class="links">
+        <li><a href="#about">About</a></li><li><a href="#portfolio">Portfolio</a></li><li><a href="#reel">Acting Video</a></li><li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="language-switch" aria-label="Language selection">
+        <a class="active" href="index.html" lang="en">EN</a><span>/</span><a class="" href="pl.html" lang="pl">PL</a>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <section class="hero" id="home"><div><div class="eyebrow">Acting Portfolio</div><h1>Ada<br>Świderska</h1><div class="hero-details"><span>Actress</span><span>29 years old</span><span>Warsaw, Poland</span></div><a class="button" href="#portfolio">View portfolio</a></div></section>
+    <section class="about" id="about"><div class="section-head"><h2>About</h2><span class="number">01</span></div><div class="about-grid"><div class="lead">An actress based in Warsaw, available for film, television, commercial and creative projects.</div><div class="copy"><p>My name is Ada Świderska. I am 29 years old and based in Warsaw, Poland. I am interested in film, television, commercial and other creative productions.</p><p>This website features my current photographs, acting video and contact details.</p><div class="details"><div class="detail"><span class="label">Location</span><span class="value">Warsaw, Poland</span></div><div class="detail"><span class="label">Age</span><span class="value">29 years old</span></div><div class="detail"><span class="label">Languages</span><span class="value">Polish, English</span></div><div class="detail"><span class="label">Availability</span><span class="value">Poland and international</span></div></div></div></div></section>
+    <section id="portfolio"><div class="section-head"><h2>Portfolio</h2><span class="number">02</span></div><div class="gallery"><figure><img src="portrait-1.jpeg" alt="Acting portrait 1"></figure><figure><img src="hero.jpeg" alt="Acting portrait 2"></figure><figure><img src="portrait-2.jpeg" alt="Acting portrait 3"></figure></div></section>
+    <section class="reel" id="reel"><div class="section-head"><h2>Acting Video Introduction</h2><span class="number">03</span></div><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/0dwnUvm8s0w" title="Acting video introduction by Ada Świderska" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><a class="video-link" href="https://youtu.be/0dwnUvm8s0w?is=Xw_xuGmn_Zg1YGWZ" target="_blank" rel="noopener noreferrer">Open video on YouTube</a></section>
+    <section class="contact" id="contact"><small>Contact</small><h2>Let's work together</h2><p>Please get in touch regarding castings, film and commercial productions, and creative projects.</p><a class="email" href="mailto:adaswiderska97@gmail.com">adaswiderska97@gmail.com</a></section>
+  </main>
+  <footer><span>© 2026 Ada Świderska</span><span>Acting portfolio</span><a href="#home">Back to top ↑</a></footer>
+  <div class="modal" id="modal"><button class="close" id="close" aria-label="Close image">×</button><img id="modalImage" alt="Enlarged acting portrait"></div>
+  <script>
+const modal=document.getElementById('modal');
+const modalImage=document.getElementById('modalImage');
+document.querySelectorAll('.gallery img').forEach(img=>img.addEventListener('click',()=>{modalImage.src=img.src;modal.classList.add('open');document.body.classList.add('modal-open')}));
+function closeModal(){modal.classList.remove('open');modalImage.src='';document.body.classList.remove('modal-open')}
+document.getElementById('close').addEventListener('click',closeModal);
+modal.addEventListener('click',e=>{if(e.target===modal)closeModal()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+</script>
+</body>
+</html>
